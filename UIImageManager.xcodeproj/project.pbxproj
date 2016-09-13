@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20808DC31D87FF1600A19A97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20808DC21D87FF1600A19A97 /* Images.xcassets */; };
+		20808DCA1D88007B00A19A97 /* UIImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 20808DC91D88007B00A19A97 /* UIImageUtils.m */; };
 		20C815041D87FD0900C2EBDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C815031D87FD0900C2EBDB /* main.m */; };
 		20C815071D87FD0900C2EBDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C815061D87FD0900C2EBDB /* AppDelegate.m */; };
 		20C8150A1D87FD0900C2EBDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C815091D87FD0900C2EBDB /* ViewController.m */; };
 		20C8150D1D87FD0900C2EBDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C8150B1D87FD0900C2EBDB /* Main.storyboard */; };
-		20C8150F1D87FD0900C2EBDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C8150E1D87FD0900C2EBDB /* Assets.xcassets */; };
 		20C815121D87FD0900C2EBDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C815101D87FD0900C2EBDB /* LaunchScreen.storyboard */; };
 		20C8151D1D87FD0900C2EBDB /* UIImageManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C8151C1D87FD0900C2EBDB /* UIImageManagerTests.m */; };
 		20C815281D87FD0900C2EBDB /* UIImageManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C815271D87FD0900C2EBDB /* UIImageManagerUITests.m */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20808DC21D87FF1600A19A97 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		20808DC81D88007B00A19A97 /* UIImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageUtils.h; sourceTree = "<group>"; };
+		20808DC91D88007B00A19A97 /* UIImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageUtils.m; sourceTree = "<group>"; };
 		20C814FF1D87FD0900C2EBDB /* UIImageManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIImageManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C815031D87FD0900C2EBDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20C815051D87FD0900C2EBDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,7 +46,6 @@
 		20C815081D87FD0900C2EBDB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		20C815091D87FD0900C2EBDB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		20C8150C1D87FD0900C2EBDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		20C8150E1D87FD0900C2EBDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20C815111D87FD0900C2EBDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20C815131D87FD0900C2EBDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20C815181D87FD0900C2EBDB /* UIImageManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIImageManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20808DC71D88005300A19A97 /* UIImageComponent */ = {
+			isa = PBXGroup;
+			children = (
+				20808DC81D88007B00A19A97 /* UIImageUtils.h */,
+				20808DC91D88007B00A19A97 /* UIImageUtils.m */,
+			);
+			path = UIImageComponent;
+			sourceTree = "<group>";
+		};
 		20C814F61D87FD0900C2EBDB = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +113,15 @@
 		20C815011D87FD0900C2EBDB /* UIImageManager */ = {
 			isa = PBXGroup;
 			children = (
+				20808DC71D88005300A19A97 /* UIImageComponent */,
 				20C815051D87FD0900C2EBDB /* AppDelegate.h */,
 				20C815061D87FD0900C2EBDB /* AppDelegate.m */,
 				20C815081D87FD0900C2EBDB /* ViewController.h */,
 				20C815091D87FD0900C2EBDB /* ViewController.m */,
 				20C8150B1D87FD0900C2EBDB /* Main.storyboard */,
-				20C8150E1D87FD0900C2EBDB /* Assets.xcassets */,
 				20C815101D87FD0900C2EBDB /* LaunchScreen.storyboard */,
 				20C815131D87FD0900C2EBDB /* Info.plist */,
+				20808DC21D87FF1600A19A97 /* Images.xcassets */,
 				20C815021D87FD0900C2EBDB /* Supporting Files */,
 			);
 			path = UIImageManager;
@@ -207,6 +220,7 @@
 				TargetAttributes = {
 					20C814FE1D87FD0900C2EBDB = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5CBDJXL33W;
 					};
 					20C815171D87FD0900C2EBDB = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -244,7 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20C815121D87FD0900C2EBDB /* LaunchScreen.storyboard in Resources */,
-				20C8150F1D87FD0900C2EBDB /* Assets.xcassets in Resources */,
+				20808DC31D87FF1600A19A97 /* Images.xcassets in Resources */,
 				20C8150D1D87FD0900C2EBDB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +287,7 @@
 				20C8150A1D87FD0900C2EBDB /* ViewController.m in Sources */,
 				20C815071D87FD0900C2EBDB /* AppDelegate.m in Sources */,
 				20C815041D87FD0900C2EBDB /* main.m in Sources */,
+				20808DCA1D88007B00A19A97 /* UIImageUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,10 +428,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = UIImageManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-hanweixing.UIImageManager";
+				PRODUCT_BUNDLE_IDENTIFIER = hwx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +444,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = UIImageManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-hanweixing.UIImageManager";
+				PRODUCT_BUNDLE_IDENTIFIER = hwx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -496,6 +521,7 @@
 				20C8152E1D87FD0900C2EBDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20C8152F1D87FD0900C2EBDB /* Build configuration list for PBXNativeTarget "UIImageManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +530,7 @@
 				20C815311D87FD0900C2EBDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20C815321D87FD0900C2EBDB /* Build configuration list for PBXNativeTarget "UIImageManagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +539,7 @@
 				20C815341D87FD0900C2EBDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
